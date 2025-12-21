@@ -55,3 +55,8 @@ body {
   color: var(--text);
   transition: background-color 0.5s ease, color 0.5s ease;
 }
+
+footer {
+  background: #000;
+  text-align: center;
+}
