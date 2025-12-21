@@ -8,20 +8,50 @@
   <link rel="stylesheet" href="style.css">
   
 <style>
-div {
 
+.container {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* 100% of the viewport height */
-}
-
-header {
-  text-align: center;
+  min-height: 100vh;
 }
 
 main {
   flex: 1;
-  padding: 0 10vw;
+  padding: 10px 40px;
+  max-width: 950px;
+  background: var(--mainbg);
+  color: var(--text);
+  margin: 380px auto 500px auto;
+}
+
+.inline {
+  display: inline;
+}
+
+.tilt {
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 150px;
+  left: 50%;
+
+}
+
+.tilt1 {
+  position: relative;
+  z-index: 1;
+  transform: translate(-45%,30%) rotate(-10deg);
+}
+
+.tilt2 {
+  position: relative;
+  z-index: 0;
+  transform: translate(15%,0%) rotate(5deg);
+}
+
+@media (max-width: 1030px) {
+  {
+  
+  }
 }
 
 </style>
@@ -29,14 +59,63 @@ main {
 </head>
 <body>
 
-<div>
+<div class="container">
 
 <header>
-  <h1>Pixel's Website!</h1>
+  <div class="tilt">
+    <div class="tilt1"><img class="inline" src="asset/image/pixels.png" alt="Pixel's" height="190"></div><div class="tilt2"><img class="inline" src="asset/image/website.png" alt="Website!" height="200"></div>
+  </div>
 </header>
 
 <main>
-  <p>I'm working on it just give me at least until christmas. This will EVENTUALLY be a lil about me page with some cool stuff on it, but right now it's just empty cuz coding is hard 3:</p>
+  <h3><img class="inline" src="asset/image/hello!!.gif" alt="hello!!" height="48"> Welcome to Pixel's Website! I am Pixel! Welcome to my site!! :3</h3>
+  
+  <!-- Boykisser gif -->
+  <img src="asset/image/boykisser.gif" alt="Boykisser" width="950">
+  
+  <p>If you've ever asked yourself <i>"Who is Pixel?"</i>, <i>"What is Pixel?"</i>, <i>"Why is Pixel?'</i>, <b>seek help.</b> And you've come to the right place!! This page is a just a simple introduction to all things me~!<p/>
+  
+  <h1>Contents</h1>
+  
+  <div class="contents">
+    <ul>
+	  <li><a href="#what">What is Pixel?</a></li>
+	  <li><a href="#who">Who is Pixel?</a></li>
+	  <li><a href="#info">More Info</a></li>
+	  <li><a href="#how">How Do I Talk to This Cute Floof?? :3c</a></li>
+	  <li><a href="#more">More Stuff</a></li>
+  </div>
+  
+  <h1 id="what">What is Pixel?</h1>
+  
+  <p>Pixel is my fursona! Who am I? I'm not telling you. The rest of this is <b>IN CHARACTER</b>, so keep that in mind!</p>
+
+  <h1 id="who">Who is Pixel?</h1>
+  
+  <p>I just realised... Google Pixel... Whatever.</p>
+  
+  <p>I am simply a silly gay furry. I love to code, I coded this very website all by myself! And I'm just an overall <i>chill guy</i>. I don't play many games, not often either. I'm not really a fan of playing games. I never really like games anyway.</p>
+  
+  <p>I absolutely <i>love</i> anything by <span class="tooltip"><a href="https://yonkagor.bandcamp.com/" target="_blank" rel="noopener noreferrer">YonKaGor</a><span class="tooltiptext">https://yonkagor.bandcamp.com/</span></span>! I <b>REFUSE</b> to listen to anything made by anyone else. Please check out their stuff when you have the time! They're just awesome :3</p>
+  
+  <img src="asset/image/yonkagor-explosion.gif" alt="YonKaGor explosion gif :3" width="950" loading="lazy">
+  
+  <h1 id="info">More Info</h1>
+ 
+  <p>Further reading if you will.</p>
+
+  <h1 id="how">How Do I Talk to This Cute Floof?? :3c</h1>
+  
+  <p>...Said no one ever. Unless you said it! In which case I would tell you there's a lot of ways to talk to this silly. Discord is the main way you can chat with me. I check Discord like... Way too much... So I'll probably respond pretty quickly.</p>
+  
+  <!-- ADD MORE STUFF THIS ISNT FINISHED YA MORON -->
+  
+  <h1 id="more">More Stuff!</h1>
+  
+  <p>Coming soon!!! (I promise!)</p>
+  
+  <img src="asset/image/boykisser-dance-boykisser.gif" alt="Boykisser dance~!" width="950" loading="lazy">
+  
 </main>
 
 <footer>
