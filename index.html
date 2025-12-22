@@ -3,7 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Pixel's Website</title>
+
+  <title>PixelPawbs – Personal Website, Fursona & Web Projects</title>
+  
+  <meta name="description" content="PixelPawbs' personal website featuring a fursona introduction, web development experiments, and creative projects built by Pixel.">
   
   <link rel="stylesheet" href="style.css">
   
@@ -18,10 +21,13 @@
 main {
   flex: 1;
   padding: 10px 40px;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px var(--shadow);
   max-width: 950px;
   background: var(--mainbg);
   color: var(--text);
   margin: 380px auto 500px auto;
+  transition: box-shadow 0.5s ease;
 }
 
 .inline {
@@ -48,6 +54,21 @@ main {
   transform: translate(15%,0%) rotate(5deg);
 }
 
+.title {
+  text-align: center;
+}
+
+.hello {
+  display: block;
+  margin: 20px auto 0 auto;
+}
+
+main img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 1rem;
+}
+
 @media (max-width: 1030px) {
   {
   
@@ -68,58 +89,101 @@ main {
 </header>
 
 <main>
-  <h3><img class="inline" src="asset/image/hello!!.gif" alt="hello!!" height="48"> Welcome to Pixel's Website! I am Pixel! Welcome to my site!! :3</h3>
+
+  <!-- Flashing hello gif -->
+  <img class="hello" src="asset/image/hello!!.gif" alt="hello!!" width="400">
+
+  <section class="title">
+    <h1>Welcome to Pixel's Website!</h1>
+  </section>
   
   <!-- Boykisser gif -->
-  <img src="asset/image/boykisser.gif" alt="Boykisser" width="950">
-  
-  <p>If you've ever asked yourself <i>"Who is Pixel?"</i>, <i>"What is Pixel?"</i>, <i>"Why is Pixel?'</i>, <b>seek help.</b> And you've come to the right place!! This page is a just a simple introduction to all things me~!<p/>
-  
-  <h1>Contents</h1>
+  <img src="asset/image/boykisser.gif" alt="Animated gif of Boykisser meowing!" width="650">
+ 
+  <section>
+    <h2>Contents</h2>
+  </section>
   
   <div class="contents">
     <ul>
+	  <li><a href="#intro">An introduction to PixelPawbs</a></li>
 	  <li><a href="#what">What is Pixel?</a></li>
 	  <li><a href="#who">Who is Pixel?</a></li>
+	  <li><a href="#looks">What Does Pixel Look Like?</a></li>
 	  <li><a href="#info">More Info</a></li>
 	  <li><a href="#how">How Do I Talk to This Cute Floof?? :3c</a></li>
 	  <li><a href="#more">More Stuff</a></li>
   </div>
+ 
+  <section>
+    <h2 id="intro">An Introduction to PixelPawbs</h2>
+  </section>
   
-  <h1 id="what">What is Pixel?</h1>
+  <p>If you've ever asked yourself <i>"Who is Pixel?"</i>, <i>"What is Pixel?"</i>, <i>"Why is Pixel?'</i>, <b>seek help.</b> And you've come to the right place!! This page is a just a simple introduction to all things me~!</p>
   
-  <p>Pixel is my fursona! Who am I? I'm not telling you. The rest of this is <b>IN CHARACTER</b>, so keep that in mind!</p>
+  <p>This is just a silly little personal website about Pixel, a furry hobbyist web developer sharing fun, creative personality-driven content.</p>
+  
+  <section>
+  <h2 id="what">What is Pixel?</h2>
+  </section>
+  
+  <p>Pixel is my fursona! He is basically just me, but as a cute fluffy pink kitty!! If you'd like to know more about his looks, keep reading! He isn't self aware! So keep in mind that everything else on this page is <b>IN CHARACTER</b>, as if he wrote it! (I did, he didn't write anything.... Lazy...)</p>
 
-  <h1 id="who">Who is Pixel?</h1>
+  <section>
+    <h2 id="who">Who is Pixel?</h2>
+  </section>
   
-  <p>I just realised... Google Pixel... Whatever.</p>
+  <p>I just realised... Google Pixel... Whatever. (I'm not related to the phone! 3:&#60;)</p>
   
-  <p>I am simply a silly gay furry. I love to code, I coded this very website all by myself! And I'm just an overall <i>chill guy</i>. I don't play many games, not often either. I'm not really a fan of playing games. I never really like games anyway.</p>
+  <p>I am simply a silly pink kitty. I love to code, I coded this very website all by myself! And I'm just an overall <i>chill guy</i>. I don't play many games, not often either. I'm not really a fan of playing games. I never really like games anyway.</p>
   
   <p>I absolutely <i>love</i> anything by <span class="tooltip"><a href="https://yonkagor.bandcamp.com/" target="_blank" rel="noopener noreferrer">YonKaGor</a><span class="tooltiptext">https://yonkagor.bandcamp.com/</span></span>! I <b>REFUSE</b> to listen to anything made by anyone else. Please check out their stuff when you have the time! They're just awesome :3</p>
   
-  <img src="asset/image/yonkagor-explosion.gif" alt="YonKaGor explosion gif :3" width="950" loading="lazy">
+  <img src="asset/image/yonkagor-explosion.gif" alt="Animated gif of YonKaGor Dragonet flying over a fence and exploding" width="550" loading="lazy">
   
-  <h1 id="info">More Info</h1>
+  <p>I absoultely LOVE milk soo much~! My absolute favourite drink of all time no doubt. Tuna pasta is probably my favourite food too, it's delicious &#60;3</p>
+  
+  <section>
+    <h2 id="looks">What Does Pixel Look Like?</h2>
+  <section>
+  
+  <p>Sadly, I don't have a camera to take selfies, nor is there any art of me... However! I can describe myself!</p>
+  
+  <p>I am a tall, anthropomorphic cat! I have fluffy pastel pink fur with white highlights on my paws, belly and the tip of my tail and ears. My ears are real big and rounded, despite that, my hearing is pretty bad. I have a big fluffy canine tail, while the rest of me is feline (Don't ask how that happened.). My eyes are teal. I don't wear clothes often, my fur um... covers... everything... yea... I do love wearing socks though! They feel so comfy on my paws!</p>
+  
+  <p>
+  
+  <section>
+    <h2 id="info">More Info</h2>
+  <section>
  
-  <p>Further reading if you will.</p>
+  <p>No more info... For now... Check back soon cutie~</p>
 
-  <h1 id="how">How Do I Talk to This Cute Floof?? :3c</h1>
+  <section>
+    <h2 id="how">How Do I Talk to This Cute Floof?? :3c</h2>
+  <section>
   
   <p>...Said no one ever. Unless you said it! In which case I would tell you there's a lot of ways to talk to this silly. Discord is the main way you can chat with me. I check Discord like... Way too much... So I'll probably respond pretty quickly.</p>
   
+  <p>My discord is <span class="tooltip"><a href="https://discord.com/users/725298996956102678/" target"_blank" rel="noopener noreferrer">here!</a><span class="tooltiptext">https://discord.com/users/725298996956102678/</span></span> Add me!!</p>
+  
   <!-- ADD MORE STUFF THIS ISNT FINISHED YA MORON -->
   
-  <h1 id="more">More Stuff!</h1>
+  <section>
+    <h2 id="more">More Stuff!</h2>
+  <section>
   
   <p>Coming soon!!! (I promise!)</p>
   
-  <img src="asset/image/boykisser-dance-boykisser.gif" alt="Boykisser dance~!" width="950" loading="lazy">
+  <p>Enjoy this awesome gif instead :3</p>
+  
+  <img src="asset/image/boykisser-dance-boykisser.gif" alt="Animated gif of boykisser doing a really well animated dance" width="950" loading="lazy">
   
 </main>
 
 <footer>
   <p>&#169; Copyright Pixel 2025</p>
+  <a href="LICENCE" target="_blank" rel="noopener noreferrer"><p>License</p>
 </footer>
 
 </div>

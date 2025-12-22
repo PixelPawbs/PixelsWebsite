@@ -32,14 +32,16 @@
 
 :root {
   --bg: #00ffff;
-  --mainbg: #ddd;
+  --mainbg: #ffd1dc;
   --text: #002121;
+  --shadow: rgba(0, 0, 0, 0.6);
 }
 
 [data-theme="dark"] {
   --bg: #0f172a;
   --mainbg: #313238;
   --text: #e5e7eb;
+  --shadow: rgba(1, 1, 1, 0.6);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -47,12 +49,17 @@
     --bg: #0f172a;
 	--mainbg: #313238;
     --text: #e5e7eb;
+    --shadow: rgba(1, 1, 1, 0.6);
   }
+}
+
+html {	
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
-  font-size: 24pt;
+  font-size: 18pt;
   font-family: "Comic Sans MS", sans-serif;
   background: var(--bg);
   color: var(--text);
@@ -67,6 +74,11 @@ a {
 a:hover {
   color: #4c7dd4;
   text-decoration: underline;
+}
+
+img {
+  user-select: none;
+  margin: 0 auto;
 }
 
 header {
@@ -94,7 +106,7 @@ footer {
   opacity: 0;
   white-space: nowrap;
   transform: translate(-50%,0);
-  transition: opacity 0s 1s;
+  transition: opacity 0s 0.25s;
   background-color: black;
   color: #ffffff;
   font-size: 13pt;
