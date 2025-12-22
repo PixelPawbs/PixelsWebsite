@@ -98,16 +98,17 @@ footer {
 .tooltip {
   position: relative;
   display: inline-block;
-  cursor: default;
+  cursor: pointer;
+  user-select: none;
 }
 
 .tooltiptext {
   visibility: hidden;
   opacity: 0;
+  cursor: default!important;
   white-space: nowrap;
   transform: translate(-50%,0);
-  transition: opacity 0s 0.25s;
-  background-color: black;
+  background-color: #000;
   color: #ffffff;
   font-size: 13pt;
   text-align: center;
@@ -117,6 +118,7 @@ footer {
   z-index: 1;
   bottom: 100%;
   left: 50%;
+  transition: opacity 0s ease 0.5s;
 }
 
 .tooltiptext::after {
@@ -124,14 +126,21 @@ footer {
   position: absolute;
   top: 100%;
   left: 50%;
-  opacity: 0;
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
   border-color: black transparent transparent transparent;
 }
 
-.tooltip:hover .tooltiptext {
+/* DEFAULT hover behavior (unchanged) */
+.tooltip:not(.tooltip--click):hover .tooltiptext {
   visibility: visible;
   opacity: 1;
+}
+
+/* CLICK-only tooltip */
+.tooltip.tooltip--click.show .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0s ease;
 }

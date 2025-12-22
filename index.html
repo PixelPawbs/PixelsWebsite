@@ -165,7 +165,9 @@ main img {
   
   <p>...Said no one ever. Unless you said it! In which case I would tell you there's a lot of ways to talk to this silly. Discord is the main way you can chat with me. I check Discord like... Way too much... So I'll probably respond pretty quickly.</p>
   
-  <p>My discord is <span class="tooltip"><a href="https://discord.com/users/725298996956102678/" target"_blank" rel="noopener noreferrer">here!</a><span class="tooltiptext">https://discord.com/users/725298996956102678/</span></span> Add me!!</p>
+  <p>My discord is <span class="tooltip"><a href="https://discord.com/users/725298996956102678/" target="_blank" rel="noopener noreferrer">here!</a><span class="tooltiptext">https://discord.com/users/725298996956102678/</span></span> Add me!!</p> 
+  
+  <p>If that doesn't work, my Username is <span class="tooltip tooltip--click copyable" data-copy="pixelpawbs">pixelpawbs<span class="tooltiptext">Copied!</span></span>.</p>
   
   <!-- ADD MORE STUFF THIS ISNT FINISHED YA MORON -->
   
@@ -187,6 +189,23 @@ main img {
 </footer>
 
 </div>
+<script>
+// copy code :3
+document.querySelectorAll('.tooltip--click').forEach(el => {
+  el.addEventListener('click', async () => {
+    const text = el.dataset.copy || el.textContent.trim();
 
+    try {
+      await navigator.clipboard.writeText(text);
+    } catch {}
+
+    el.classList.add('show');
+
+    setTimeout(() => {
+      el.classList.remove('show');
+    }, 1200);
+  });
+});
+</script>
 </body>
 </html>
