@@ -28,7 +28,7 @@ main {
   max-width: 950px;
   background: var(--mainbg);
   color: var(--text);
-  margin: 180px auto 500px auto;
+  margin: 230px auto 500px auto;
   transition: box-shadow 0.5s ease;
 }
 
@@ -59,16 +59,20 @@ header {
 
 .pixels {
   width: 315px;
-  position: absolute;
-  top: 65px;
-  transform: translate(-50%,-50%);
+  position: relative;
+  top: 125px;
+  transform: translate(-50%,-50%) rotate(-15deg);
+  z-index: 2;
+  left: -61%;
 }
 
 .website {
   width: 750px;
   position: absolute;
-  top: 125px;
+  top: 234px;
   transform: translate(-50%,-50%);
+  left: 50%;
+  z-index: 1;
 }
   
 @media (max-width: 1030px) {
