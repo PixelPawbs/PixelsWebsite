@@ -45,11 +45,24 @@ main {
 .hello {
   display: block;
   margin: 20px auto 0 auto;
+  max-width: 400px;
+}
+
+.bkmeow {
+  max-width: 650px;
+}
+
+.yonkasplode {
+  max-width: 550px;
+}
+
+.bkdance {
+  max-width: 950px;
 }
 
 main img {
   display: block;
-  margin: 0 auto;
+  width: 100%;
   border-radius: 1rem;
 }
 
@@ -74,6 +87,12 @@ header {
   left: 50%;
   z-index: 1;
 }
+
+@media (max-width: 735px) {
+  main {
+    padding: 10px 5px;
+  }
+}
   
 @media (max-width: 1030px) {
   main {
@@ -93,6 +112,7 @@ header {
     display: inline;
     position: relative;
     top: 36px;
+	left: auto;
 	transform: none;
   }
 }
@@ -113,14 +133,18 @@ header {
 <main>
 
   <!-- Flashing hello gif -->
-  <img class="hello" src="asset/image/hello!!.gif" alt="hello!!" width="400">
+  <div class="imgcont hello">
+    <img src="asset/image/hello!!.gif" alt="hello!!">
+  </div>
 
   <section class="title">
     <h1>Welcome to Pixel's Website!</h1>
   </section>
   
   <!-- Boykisser gif -->
-  <img src="asset/image/boykisser.gif" alt="Animated gif of Boykisser meowing!" width="650">
+  <div class="imgcont bkmeow">
+    <img src="asset/image/boykisser.gif" alt="Animated gif of Boykisser meowing!">
+  </div>
  
   <section>
     <h2>Contents</h2>
@@ -161,7 +185,9 @@ header {
   
   <p>I absolutely <i>love</i> anything by <span class="tooltip"><a href="https://yonkagor.bandcamp.com/" target="_blank" rel="noopener noreferrer">YonKaGor</a><span class="tooltiptext">https://yonkagor.bandcamp.com/</span></span>! I <b>REFUSE</b> to listen to anything made by anyone else. Please check out their stuff when you have the time! They're just awesome :3</p>
   
-  <img src="asset/image/yonkagor-explosion.gif" alt="Animated gif of YonKaGor Dragonet flying over a fence and exploding" width="550" loading="lazy">
+  <div class="imgcont yonkasplode">
+    <img src="asset/image/yonkagor-explosion.gif" alt="Animated gif of YonKaGor Dragonet flying over a fence and exploding" loading="lazy">
+  </div>
   
   <p>I absoultely LOVE milk soo much~! My absolute favourite drink of all time no doubt. Tuna pasta is probably my favourite food too, it's delicious &#60;3</p>
   
@@ -201,7 +227,9 @@ header {
   
   <p>Enjoy this awesome gif instead :3</p>
   
-  <img src="asset/image/boykisser-dance-boykisser.gif" alt="Animated gif of boykisser doing a really well animated dance" width="950" loading="lazy">
+  <div class="imgcont bkdance">
+    <img src="asset/image/boykisser-dance-boykisser.gif" alt="Animated gif of boykisser doing a really well animated dance" loading="lazy">
+  </div>
   
 </main>
 

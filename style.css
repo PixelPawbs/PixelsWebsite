@@ -76,7 +76,7 @@ a:hover {
   text-decoration: underline;
 }
 
-img {
+.imgcont {
   user-select: none;
   margin: 0 auto;
 }
