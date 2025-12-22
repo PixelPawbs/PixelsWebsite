@@ -28,7 +28,7 @@ main {
   max-width: 950px;
   background: var(--mainbg);
   color: var(--text);
-  margin: 380px auto 500px auto;
+  margin: 180px auto 500px auto;
   transition: box-shadow 0.5s ease;
 }
 
@@ -36,24 +36,7 @@ main {
   display: inline;
 }
 
-.tilt {
-  position: absolute;
-  transform: translate(-50%,-50%);
-  top: 150px;
-  left: 50%;
-}
 
-.tilt1 {
-  position: relative;
-  z-index: 1;
-  transform: translate(-45%,30%) rotate(-10deg);
-}
-
-.tilt2 {
-  position: relative;
-  z-index: 0;
-  transform: translate(15%,0%) rotate(5deg);
-}
 
 .title {
   text-align: center;
@@ -70,39 +53,45 @@ main img {
   border-radius: 1rem;
 }
 
+header {
+  margin: 0 auto;
+}
+
+.pixels {
+  width: 315px;
+  position: absolute;
+  top: 65px;
+  transform: translate(-50%,-50%);
+}
+
+.website {
+  width: 750px;
+  position: absolute;
+  top: 125px;
+  transform: translate(-50%,-50%);
+}
+  
 @media (max-width: 1030px) {
-  .tilt1 {
-    position: absolute;
-    transform: translate(-50%,-50%) rotate(-5deg);
-    left: -254px;
-    top: -30px;
+  main {
+    margin: 180px auto 500px auto;
+  }
+  .pixels {
+    width: 30%;
+    display: inline;
+    position: relative;
+    top: 65px;
+    left: 0%;
+	transform: none;
   }
 
-  .tilt2 {
-    position: absolute;
-    transform: translate(-50%,-50%) rotate(0deg);
-    top: 78px;
-  }
-}
-
-@media (max-width: 775px) {
-  .tilt {
+  .website {
     width: 100%;
-  }
-  .tilt1 {
+    display: inline;
     position: relative;
-	transform: translate(-45%,30%) rotate(-10deg);
-    left: auto;
-    top: auto;
-  }
-
-  .tilt2 {
-    position: relative;
-    transform: translate(15%,0%) rotate(5deg);
-	top: auto;
+    top: 36px;
+	transform: none;
   }
 }
-
 </style>
 
 </head>
@@ -111,9 +100,10 @@ main img {
 <div class="container">
 
 <header>
-  <div class="tilt">
-    <div class="tilt1"><img class="inline" src="asset/image/pixels.png" alt="Pixel's" height="190"></div><div class="tilt2"><img class="inline" src="asset/image/website.png" alt="Website!" height="200"></div>
-  </div>
+
+    <img class="pixels" src="asset/image/pixels.png" alt="Pixel's">
+	<img class="website" src="asset/image/website.png" alt="Wesbite">
+
 </header>
 
 <main>

@@ -41,7 +41,7 @@
   --bg: #0f172a;
   --mainbg: #313238;
   --text: #e5e7eb;
-  --shadow: rgba(1, 1, 1, 0.6);
+  --shadow: rgba(255, 255, 255, 0.6);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -49,7 +49,7 @@
     --bg: #0f172a;
 	--mainbg: #313238;
     --text: #e5e7eb;
-    --shadow: rgba(1, 1, 1, 0.6);
+    --shadow: rgba(255, 255, 255, 0.6);
   }
 }
 
@@ -79,10 +79,6 @@ a:hover {
 img {
   user-select: none;
   margin: 0 auto;
-}
-
-header {
-  text-align: center;
 }
 
 footer {
