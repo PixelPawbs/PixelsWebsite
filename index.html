@@ -90,7 +90,7 @@ header {
 
 @media (max-width: 735px) {
   main {
-    padding: 10px 5px;
+    padding: 10px 10px;
   }
 }
   
@@ -215,7 +215,7 @@ header {
   
   <p>My discord is <span class="tooltip"><a href="https://discord.com/users/725298996956102678/" target="_blank" rel="noopener noreferrer">here!</a><span class="tooltiptext">https://discord.com/users/725298996956102678/</span></span> Add me!!</p> 
   
-  <p>If that doesn't work, my Username is <span class="tooltip tooltip--click copyable" data-copy="pixelpawbs">pixelpawbs<span class="tooltiptext">Copied!</span></span>.</p>
+  <p>If that doesn't work, my username is <span class="tooltip tooltip--click copyable" data-copy="pixelpawbs"><u>pixelpawbs</u><span class="tooltiptext">Copied!</span></span>. <i><span id="clickit">(Click it! :3)</span></i></p>
   
   <!-- ADD MORE STUFF THIS ISNT FINISHED YA MORON -->
   
@@ -241,6 +241,7 @@ header {
 </div>
 <script>
 // copy code :3
+const clickit = document.getElementById('clickit');
 document.querySelectorAll('.tooltip--click').forEach(el => {
   el.addEventListener('click', async () => {
     const text = el.dataset.copy || el.textContent.trim();
@@ -249,10 +250,15 @@ document.querySelectorAll('.tooltip--click').forEach(el => {
       await navigator.clipboard.writeText(text);
     } catch {}
 
+    if (clickit) {
+      clickit.textContent = "(Good boy~! ;3)";
+    }
+
     el.classList.add('show');
 
     setTimeout(() => {
       el.classList.remove('show');
+	  clickit.textContent = "(Click it! :3)";
     }, 1200);
   });
 });
