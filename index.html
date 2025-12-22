@@ -10,6 +10,8 @@
   
   <link rel="stylesheet" href="style.css">
   
+  <link rel="icon" type="image/x-icon" href="asset/image/favicon.ico">
+  
 <style>
 
 .container {
@@ -39,7 +41,6 @@ main {
   transform: translate(-50%,-50%);
   top: 150px;
   left: 50%;
-
 }
 
 .tilt1 {
@@ -70,8 +71,35 @@ main img {
 }
 
 @media (max-width: 1030px) {
-  {
-  
+  .tilt1 {
+    position: absolute;
+    transform: translate(-50%,-50%) rotate(-5deg);
+    left: -254px;
+    top: -30px;
+  }
+
+  .tilt2 {
+    position: absolute;
+    transform: translate(-50%,-50%) rotate(0deg);
+    top: 78px;
+  }
+}
+
+@media (max-width: 775px) {
+  .tilt {
+    width: 100%;
+  }
+  .tilt1 {
+    position: relative;
+	transform: translate(-45%,30%) rotate(-10deg);
+    left: auto;
+    top: auto;
+  }
+
+  .tilt2 {
+    position: relative;
+    transform: translate(15%,0%) rotate(5deg);
+	top: auto;
   }
 }
 
