@@ -1,5 +1,5 @@
 // hai... i used chatgpt for this part... im dumb... i just dont want spam ok? love ya <3
-
+window.addEventListener("load", () => {
 const LIMITS = {
   name: 50,
   email: 50,
@@ -56,3 +56,4 @@ window.addEventListener("pageshow", (event) => {
 });
 
 validateForm();
+});
