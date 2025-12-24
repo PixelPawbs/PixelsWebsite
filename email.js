@@ -21,8 +21,11 @@ function validateForm() {
     const el = fields[key];
     const max = LIMITS[key];
     const value = el.value.trim();
+	const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     if (value.length === 0) valid = false;
+	
+	if (!emailPattern.test(fields.email.value)) valid = false;
 
     if (value.length > max) valid = false;
   }
