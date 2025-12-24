@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>PixelPawbs – Personal Website, Fursona & Web Projects</title>
+  
+  <meta name="description" content="PixelPawbs' personal website featuring a fursona introduction, web development experiments, and creative projects built by Pixel.">
+  
+  <link rel="stylesheet" href="style.css">
+  
+  <link rel="icon" type="image/x-icon" href="asset/image/favicon.ico">
+  
+<style>
+
+textarea {
+  display: block;
+  resize: none;
+  width: 99%;
+    padding: 5px;
+  height: 300px;
+  font-family: monospace;
+}
+
+.smallinputs{
+width:100%;
+display:flex;
+flex-direction:row;
+justify-content: center;
+
+
+}
+
+.name {
+  display: block;
+  flex-grow: 1;
+  padding: 5px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  font-family: monospace;
+}
+
+.email {
+  display: block;
+  flex-grow: 1;
+  padding: 5px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+  font-family: monospace;
+}
+
+.send {
+  display: block;
+  margin: 10px auto 20px auto;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+  
+@media (max-width: 1030px) {
+  .send {
+    padding: 15px 25px;
+  }
+  .email {
+    padding: 15px 5px;
+  }
+  .name {
+    padding: 15px 5px;
+  }
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<header>
+
+    <img class="pixels" src="asset/image/pixels.png" alt="Pixel's">
+	<img class="website" src="asset/image/website.png" alt="Wesbite">
+
+</header>
+
+<main>
+
+
+
+  <section class="title">
+    <h1>Contact</h1>
+  </section>
+
+  <p>If you want to contact me to criticize the site, ask questions, have a nice chat, for copyright/legal issues, or for any other reasons, fill out the form below! I'm happy to read and respond to anything. Please be nice!</p>
+	
+  <section>
+  
+    <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+	  <input type="hidden" name="access_key" value="bb54d53f-16e5-436e-a6c0-c81c99049f4e">
+      <div class="smallinputs">
+		<input id="name" class="name" type="text" name="name" required maxlength="50" placeholder="Your name">
+		<input id="email" class="email" type="email" name="email" required maxlength="50" placeholder="Your email">
+	  </div>
+	  <textarea id="message" name="message" required maxlength="1000" placeholder="Message"></textarea>
+
+	  <button class="send" id="sendBtn" type="submit">Send</button>
+	</form>
+	
+  </section>
+
+  
+</main>
+
+<footer>
+  <p>&#169; Copyright Pixel 2025</p>
+  <a href="LICENCE" target="_blank" rel="noopener noreferrer"><p>License</p>
+  <a href="index.html"><p>Back</p>
+</footer>
+</div>
+<script src="email.js"></script> 
+
+</body>
+</html>
