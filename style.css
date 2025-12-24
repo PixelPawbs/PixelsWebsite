@@ -212,6 +212,7 @@ footer {
 @media (max-width: 1030px) {
   main {
     margin: 110px auto 500px auto;
+	border-radius: 0px;
   }
   .pixels {
     width: 30%;
