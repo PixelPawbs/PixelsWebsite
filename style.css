@@ -76,6 +76,10 @@ a:hover {
   text-decoration: underline;
 }
 
+img {
+  user-select: none;
+}
+
 .imgcont {
   user-select: none;
   margin: 0 auto;

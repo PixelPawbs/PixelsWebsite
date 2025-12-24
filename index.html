@@ -158,8 +158,11 @@ header {
 	  <li><a href="#who">Who is Pixel?</a></li>
 	  <li><a href="#looks">What Does Pixel Look Like?</a></li>
 	  <li><a href="#info">More Info</a></li>
-	  <li><a href="#how">How Do I Talk to This Cute Floof?? :3c</a></li>
-	  <li><a href="#more">More Stuff</a></li>
+	    <ul>
+	      <li><a href="#pronouns">Pronouns</a></li>
+	    </ul>
+	  <br>
+	  <li><a href="#other">Other Stuff</a></li>
 	    <ul>
 	      <li><a href="#coming">Coming Soon</a></li>
 	    </ul>
@@ -201,30 +204,24 @@ header {
   
   <p>Sadly, I don't have a camera to take selfies, nor is there any art of me... However! I can describe myself!</p>
   
-  <p>I am a tall, anthropomorphic cat! I have fluffy pastel pink fur with white highlights on my paws, belly and the tip of my tail and ears. My ears are real big and rounded, despite that, my hearing is pretty bad. I have a big fluffy canine tail, while the rest of me is feline (Don't ask how that happened.). My eyes are teal. I don't wear clothes often, my fur um... covers... everything... yea... I do love wearing socks though! They feel so comfy on my paws!</p>
-  
-  <p>
+  <p>I am a sorta tall, ENBY anthropomorphic cat! I have fluffy pastel pink fur with white highlights on my paws, belly and the tip of my tail and ears. My ears are real big and rounded, despite that, my hearing is pretty bad. I have a big fluffy canine tail, while the rest of me is feline (Don't ask how that happened.). My eyes are teal. I don't wear clothes often, my fur um... covers... everything... yea... I do love wearing socks though! They feel so comfy on my paws!</p>
   
   <section>
-    <h2 id="info">More Info</h2>
+    <h1 id="info">More Info</h1>
   <section>
  
-  <p>No more info... For now... Check back soon cutie~</p>
+  <section>
+    <h2 id="pronouns">Pronouns</h2>
+  </section>
+  
+  <p>Pronouns aren't personally a big deal for me, however, I would prefer you use they/them pronouns when referring to me! He/him is fine, anything else is a no.</p>
 
-  <section>
-    <h2 id="how">How Do I Talk to This Cute Floof?? :3c</h2>
-  <section>
   
-  <p>...Said no one ever. Unless you said it! In which case I would tell you there's a lot of ways to talk to this silly. Discord is the main way you can chat with me. I check Discord like... Way too much... So I'll probably respond pretty quickly.</p>
-  
-  <p>My discord is <span class="tooltip"><a href="https://discord.com/users/725298996956102678/" target="_blank" rel="noopener noreferrer">here!</a><span class="tooltiptext">https://discord.com/users/725298996956102678/</span></span> Add me!!</p> 
-  
-  <p>If that doesn't work, my username is <span class="tooltip tooltip--click copyable" data-copy="pixelpawbs"><u>pixelpawbs</u><span class="tooltiptext">Copied!</span></span>. <i><span id="clickit">(Click it! :3)</span></i></p>
-  
+  <br>
   <!-- ADD MORE STUFF THIS ISNT FINISHED YA MORON -->
   
   <section>
-    <h1 id="more">More Stuff!</h1>
+    <h1 id="other">Other Stuff!</h1>
   <section>
   
   <p>Other, sorta unrelated stuff goes here!</p>
@@ -249,29 +246,5 @@ header {
 </footer>
 
 </div>
-<script>
-// copy code :3
-const clickit = document.getElementById('clickit');
-document.querySelectorAll('.tooltip--click').forEach(el => {
-  el.addEventListener('click', async () => {
-    const text = el.dataset.copy || el.textContent.trim();
-
-    try {
-      await navigator.clipboard.writeText(text);
-    } catch {}
-
-    if (clickit) {
-      clickit.textContent = "(Good boy~! ;3)";
-    }
-
-    el.classList.add('show');
-
-    setTimeout(() => {
-      el.classList.remove('show');
-	  clickit.textContent = "(Click it! :3)";
-    }, 1200);
-  });
-});
-</script>
 </body>
 </html>
