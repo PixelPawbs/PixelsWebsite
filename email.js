@@ -38,7 +38,7 @@ form.addEventListener("submit", (e) => {
 
   if (sendBtn.disabled) {
     e.preventDefault();
-    alert("Your message is too long or incomplete!");
+    alert("Invalid message.");
     return;
   }
 
