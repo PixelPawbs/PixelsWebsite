@@ -1,4 +1,4 @@
-// hai... i used chatgpt for this part... im dumb... i just dont want spam ok? love ya <3
+// hai... i used chatgpt for this... im dumb... i just dont want spam ok? love ya <3
 window.addEventListener("load", () => {
 const LIMITS = {
   name: 50,
